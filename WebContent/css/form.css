@@ -1,0 +1,63 @@
+.well {
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+}
+.page-header{
+	color: #333;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+.header {
+	background-color: #f8f8f8;
+	height: 60px;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.header2 {
+	padding: 20px;
+	height: 65px;
+}
+
+option[disabled]{ 
+	display: none;
+}
+
+.form-custom{
+	margin-bottom: 15px;
+	margin-left: 47px;
+}
+
+.button-custom{
+	 margin-bottom: 20px;
+	 margin-right: 49px;
+}
+
+.search-input{
+	 margin-bottom: 10px;
+	 max-width: 60%;
+}
+
