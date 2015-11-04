@@ -13,7 +13,7 @@
 	<body>
 	<div class=top-bar></div>
 	<div class="container">
-		<form class="form-signin" role="form">
+		<form class="form-signin" role="form" action="nxtAutenticacao" method="post">
 			<h2 class="form-signin-heading">
 				<strong>NXTQuiz</strong>
 			</h2>
@@ -28,7 +28,7 @@
 			<label class="form-question">Não possui uma conta?</label>
 			<br />
 			 
-			<a href="cadastro.jsp" class="form-link">Crie uma conta</a>
+			<a href="telaCadastroAluno.jsp" class="form-link">Crie uma conta</a>
 		</form>
 	</div>
 
