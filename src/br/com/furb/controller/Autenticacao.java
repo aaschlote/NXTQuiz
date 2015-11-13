@@ -32,10 +32,10 @@ public class Autenticacao extends HttpServlet {
 			user.setUsuario((Usuario)query.getResultList().get(0));
 			SystemAction.getInstance().setSession(request, user);
 			request.getRequestDispatcher("principal.jsp").forward(request, response);
+		}else{
+			request.getRequestDispatcher("index.jsp").forward(request, response);
 		}
 		
-		
-		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 
 }
