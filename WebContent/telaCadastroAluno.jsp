@@ -5,8 +5,6 @@
 <head>
 		<title>Cadastro NXT Quiz.</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/navbar.css" rel="stylesheet">
-		<link href="css/navbar-registration.css" rel="stylesheet">
 		<link href="css/form.css" rel="stylesheet">
 	</head>
 <body>
