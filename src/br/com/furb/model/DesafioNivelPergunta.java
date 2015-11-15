@@ -24,11 +24,14 @@ public class DesafioNivelPergunta {
 	@Column(name = "NR_PERGUNTA")
 	private int nrPergunta;
 	
-	@Column(name = "IE_RESPOSTA_CERTA")
-	private String ieRespostaCerta;
-	
 	@Column(name = "QT_PONTUACAO")
 	private int qtPontuacao;
+	
+	@Column(name = "DS_DIRECAO")
+	private String dsDirecao;
+	
+	@Column(name = "QT_MOVIMENTACAO")
+	private String qtMovimentacao;
 	
 	@ManyToOne
 	@JoinColumn(name = "ID_DESAFIO_NIVEL")
@@ -56,14 +59,6 @@ public class DesafioNivelPergunta {
 
 	public void setNrPergunta(int nrPergunta) {
 		this.nrPergunta = nrPergunta;
-	}
-
-	public String getIeRespostaCerta() {
-		return ieRespostaCerta;
-	}
-
-	public void setIeRespostaCerta(String ieRespostaCerta) {
-		this.ieRespostaCerta = ieRespostaCerta;
 	}
 
 	public int getQtPontuacao() {

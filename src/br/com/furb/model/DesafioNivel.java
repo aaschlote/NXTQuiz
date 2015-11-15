@@ -27,12 +27,6 @@ public class DesafioNivel {
 	@Column(name = "DS_QUESTAO")
 	private String dsQuestao;
 	
-	@Column(name = "DS_DIRECAO")
-	private String dsDirecao;
-	
-	@Column(name = "QT_MOVIMENTACAO")
-	private String qtMovimentacao;
-	
 	@ManyToOne
 	@JoinColumn(name = "ID_DESAFIO")
 	private Desafio desafio;
@@ -75,22 +69,6 @@ public class DesafioNivel {
 
 	public void setDesafio(Desafio desafio) {
 		this.desafio = desafio;
-	}
-
-	public String getDsDirecao() {
-		return dsDirecao;
-	}
-
-	public void setDsDirecao(String dsDirecao) {
-		this.dsDirecao = dsDirecao;
-	}
-
-	public String getQtMovimentacao() {
-		return qtMovimentacao;
-	}
-
-	public void setQtMovimentacao(String qtMovimentacao) {
-		this.qtMovimentacao = qtMovimentacao;
 	}
 
 }

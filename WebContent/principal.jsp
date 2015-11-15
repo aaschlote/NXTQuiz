@@ -34,6 +34,8 @@
 				for (Desafio desafio : listaDesafios){
 					out.print("<li>");
 					out.print("<a href='#'");
+						out.print(" data-id='" + desafio.getId() + "'");
+						out.print(" class='pagina-desafio'>");
 						out.print("<span id='teste' name='teste' class='teste mail-sender'>" + desafio.getId() + "</span>");
         				out.print("<span class='mail-subject'>" + desafio.getNmDesafio() + "</span>");
         				out.print("<span class='mail-message-preview'>" + desafio.getDsinfoDesafio() + "</span>");
@@ -49,6 +51,7 @@
    	<script src="js/bootstrap.min.js"></script>
    	<script src="js/navbar.js"></script>
    	<script src="js/form.js"></script>
+   	<script src="js/desafio.js"></script>
    	<script>app.initialize();</script>
 
 </body>
