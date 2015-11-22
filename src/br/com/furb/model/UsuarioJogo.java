@@ -6,6 +6,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -31,8 +33,16 @@ public class UsuarioJogo {
 	@Temporal(TemporalType.DATE)
 	private Calendar dtFimJogo;
 	
-	@Column(name = "QT_TENTATIVAS")
-	private int qtTentativas;
+	@Column(name = "QT_ERROS")
+	private int qtErros;
+	
+	@ManyToOne
+	@JoinColumn(name = "ID_DESAFIO")
+	private Desafio desafio;
+	
+	@ManyToOne
+	@JoinColumn(name = "ID_USUARIO")
+	private Usuario usuario;
 
 	public Long getId() {
 		return id;
@@ -66,12 +76,28 @@ public class UsuarioJogo {
 		this.dtFimJogo = dtFimJogo;
 	}
 
-	public int getQtTentativas() {
-		return qtTentativas;
+	public int getQtErros() {
+		return qtErros;
 	}
 
-	public void setQtTentativas(int qtTentativas) {
-		this.qtTentativas = qtTentativas;
+	public void setQtErros(int qtErros) {
+		this.qtErros = qtErros;
+	}
+
+	public Desafio getDesafio() {
+		return desafio;
+	}
+
+	public void setDesafio(Desafio desafio) {
+		this.desafio = desafio;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
 }
