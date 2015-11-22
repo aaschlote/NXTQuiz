@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.furb.dao.GenericDao;
 import br.com.furb.dao.User;
 import br.com.furb.model.DesafioNivelPergunta;
+import br.com.furb.model.UsuarioJogo;
 import br.com.furb.utils.SystemAction;
+import br.com.lejos.LejosController;
 
 @WebServlet("/nxtValidaProximaPergunta")
 public class ValidaProximaPergunta extends HttpServlet {
@@ -21,16 +23,22 @@ public class ValidaProximaPergunta extends HttpServlet {
 			throws ServletException, IOException {
 
 		User user = SystemAction.getInstance().getSessionUser();
+		UsuarioJogo usuarioJogo = user.getUsuarioJogo();
 
 		String ieRespostaCerta = request.getParameter("resposta-certa");
 		Long idPergunta = Long.parseLong(request.getParameter("id-pergunta"));
 
 		if (ieRespostaCerta.equalsIgnoreCase("S")) {
+			
+			//LejosController lejosController = new LejosController();
 
 			GenericDao generic = new GenericDao();
 
 			DesafioNivelPergunta pergunta = generic.searchDesafioNivelPergunta(idPergunta, user);
-
+			//lejosController.executarComando(pergunta.getId().intValue());
+			
+			usuarioJogo.setQtPontuacao(usuarioJogo.getQtPontuacao()+pergunta.getQtPontuacao());
+			
 			if (pergunta.getDesafioNivel().getNrNivel() == 3) { // Game is over
 				user.setGameOver(true);
 			} else {
@@ -46,7 +54,10 @@ public class ValidaProximaPergunta extends HttpServlet {
 
 			user.setShowErrorSpan(false);
 		} else {
-			 
+			user.getManager().getTransaction().begin();
+			usuarioJogo.setQtErros(usuarioJogo.getQtErros()+1);
+			user.getManager().merge(usuarioJogo);
+			user.getManager().getTransaction().commit();
 			user.setShowErrorSpan(true);
 		}
 

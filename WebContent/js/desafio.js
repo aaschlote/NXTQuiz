@@ -8,7 +8,18 @@ window.onload = function() {
 $('a.pagina-desafio').on('click', function() {
 	var id = $(this).data('id');
 	
-	location.href='telaPerguntas.jsp?idDesafio='+id;
+	$.ajax({
+        url: "nxtAceitaDesafio",
+        type: 'POST',
+        data: {'id-desafio' : id},
+        success: function (data) { 
+        	location.href='telaPerguntas.jsp?idDesafio='+id;
+        	return false;
+        },
+        error:function(data,status,er) {
+            alert("error: "+data+" status: "+status+" er:"+er);
+        }
+    });
 	
 	return false;
 });

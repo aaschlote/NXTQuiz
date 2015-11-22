@@ -5,6 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import br.com.furb.model.Usuario;
+import br.com.furb.model.UsuarioJogo;
 
 public class User {
 	
@@ -15,6 +16,7 @@ public class User {
 	private int nrPergunta;
 	private boolean showErrorSpan;
 	private boolean gameOver;
+	private UsuarioJogo usuarioJogo;
 	
 	public User(){
 		factory = new Persistence().createEntityManagerFactory("connection");
@@ -71,7 +73,13 @@ public class User {
 	public void setGameOver(boolean gameOver) {
 		this.gameOver = gameOver;
 	}
-	
-	
+
+	public UsuarioJogo getUsuarioJogo() {
+		return usuarioJogo;
+	}
+
+	public void setUsuarioJogo(UsuarioJogo usuarioJogo) {
+		this.usuarioJogo = usuarioJogo;
+	}
 
 }

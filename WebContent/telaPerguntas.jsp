@@ -72,8 +72,8 @@
 	      </div>
 	      <div class="modal-body" style="text-align: center">
 	      	<p style="font-weight: bold">Desafio: <%out.print(desafioNivelPergunta.getDesafioNivel().getDesafio().getNmDesafio()); %></p>
-	        <p style="font-weight: bold">Quantidade de erros: 0</p>
-	        <p style="font-weight: bold">Pontuação: 0</p>
+	        <p style="font-weight: bold">Quantidade de erros: <%out.print(user.getUsuarioJogo().getQtErros()); %></p>
+	        <p style="font-weight: bold">Pontuação: <%out.print(user.getUsuarioJogo().getQtPontuacao()); %></p>
 	        <button type="button" class="btn btn-info btn-lg">Encerrar sessão</button>
 	      </div>
 	    </div>
