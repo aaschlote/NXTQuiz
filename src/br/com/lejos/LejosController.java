@@ -59,7 +59,7 @@ public class LejosController {
 
 	public static void main(String[] args) {
 		LejosController lejosController = new LejosController();
-		lejosController.executarComando(1);
+		lejosController.executarComando(23);
 	}
 
 }

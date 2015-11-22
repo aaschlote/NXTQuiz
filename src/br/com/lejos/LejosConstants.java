@@ -5,12 +5,16 @@ import java.util.List;
 
 public class LejosConstants {
 	
+	/**
+	 * 400 anda uma unidade
+	 */
+	
 		private static String programa1 = 
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1800, true); \r\n" 
-				+ "	       Motor.B.rotate(1800); \r\n" 
+				+ "        Motor.A.rotate(2000, true); \r\n" 
+				+ "	       Motor.B.rotate(2000); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -18,8 +22,11 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "        Motor.A.rotate(130, true); \r\n" 
+				+ "	       Motor.B.rotate(130); \r\n" 
+				+ "	       Motor.B.rotate(250); \r\n" 
+				+ "        Motor.A.rotate(1400, true); \r\n" 
+				+ "	       Motor.B.rotate(1400); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -28,8 +35,11 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "        Motor.A.rotate(130, true); \r\n" 
+				+ "	       Motor.B.rotate(130); \r\n" 
+				+ "	       Motor.B.rotate(250); \r\n" 
+				+ "        Motor.A.rotate(1050, true); \r\n" 
+				+ "	       Motor.B.rotate(1050); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -37,16 +47,19 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "	       Motor.B.rotate(500); \r\n" 
+				+ "        Motor.A.rotate(1500, true); \r\n" 
+				+ "	       Motor.B.rotate(1500); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
+		
 		private static String programa5 = 
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "	       Motor.A.rotate(750); \r\n" 
+				+ "        Motor.A.rotate(1800, true); \r\n" 
+				+ "	       Motor.B.rotate(1800); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -54,8 +67,13 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "        Motor.A.rotate(2000, true); \r\n" 
+				+ "	       Motor.B.rotate(2000); \r\n" 
+				+ "        Motor.A.rotate(130, true); \r\n" 
+				+ "	       Motor.B.rotate(130); \r\n" 
+				+ "	       Motor.B.rotate(250); \r\n" 
+				+ "        Motor.A.rotate(1400, true); \r\n" 
+				+ "	       Motor.B.rotate(1400); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -63,8 +81,14 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "        Motor.A.rotate(130, true); \r\n" 
+				+ "	       Motor.B.rotate(130); \r\n" 
+				+ "	       Motor.B.rotate(250); \r\n" 
+				+ "        Motor.A.rotate(1050, true); \r\n" 
+				+ "	       Motor.B.rotate(1050); \r\n" 
+				+ "	       Motor.B.rotate(500); \r\n" 
+				+ "        Motor.A.rotate(1500, true); \r\n" 
+				+ "	       Motor.B.rotate(1500); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -72,8 +96,9 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "	       Motor.A.rotate(750); \r\n" 
+				+ "        Motor.A.rotate(1800, true); \r\n" 
+				+ "	       Motor.B.rotate(1800); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -81,8 +106,24 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "        Motor.A.rotate(2000, true); \r\n" 
+				+ "	       Motor.B.rotate(2000); \r\n" 
+				+ "        Motor.A.rotate(130, true); \r\n" 
+				+ "	       Motor.B.rotate(130); \r\n" 
+				+ "	       Motor.B.rotate(250); \r\n" 
+				+ "        Motor.A.rotate(1400, true); \r\n" 
+				+ "	       Motor.B.rotate(1400); \r\n" 
+				+ "        Motor.A.rotate(130, true); \r\n" 
+				+ "	       Motor.B.rotate(130); \r\n" 
+				+ "	       Motor.B.rotate(250); \r\n" 
+				+ "        Motor.A.rotate(1050, true); \r\n" 
+				+ "	       Motor.B.rotate(1050); \r\n" 
+				+ "	       Motor.B.rotate(500); \r\n" 
+				+ "        Motor.A.rotate(1500, true); \r\n" 
+				+ "	       Motor.B.rotate(1500); \r\n" 
+				+ "	       Motor.A.rotate(750); \r\n" 
+				+ "        Motor.A.rotate(1800, true); \r\n" 
+				+ "	       Motor.B.rotate(1800); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -90,8 +131,8 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "        Motor.A.rotate(1200, true); \r\n" 
+				+ "	       Motor.B.rotate(1200); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -99,8 +140,9 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "	       Motor.B.rotate(700); \r\n" 
+				+ "        Motor.A.rotate(2500, true); \r\n" 
+				+ "	       Motor.B.rotate(2500); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -108,8 +150,9 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "	       Motor.A.rotate(550); \r\n" 
+				+ "        Motor.A.rotate(1300, true); \r\n" 
+				+ "	       Motor.B.rotate(1300); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -117,8 +160,9 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "	       Motor.B.rotate(550); \r\n" 
+				+ "        Motor.A.rotate(500, true); \r\n" 
+				+ "	       Motor.B.rotate(500); \r\n" 
 				+ "	   } \r\n" 				
 				+ "}"; 
 		
@@ -126,8 +170,11 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "        Motor.A.rotate(1200, true); \r\n" 
+				+ "	       Motor.B.rotate(1200); \r\n" 
+				+ "	       Motor.B.rotate(700); \r\n" 
+				+ "        Motor.A.rotate(2500, true); \r\n" 
+				+ "	       Motor.B.rotate(2500); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -135,26 +182,40 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
-				+ "	   } \r\n" 
-				+ "}";
+				+ "	       Motor.A.rotate(550); \r\n" 
+				+ "        Motor.A.rotate(1300, true); \r\n" 
+				+ "	       Motor.B.rotate(1300); \r\n" 
+				+ "	       Motor.B.rotate(550); \r\n" 
+				+ "        Motor.A.rotate(500, true); \r\n" 
+				+ "	       Motor.B.rotate(500); \r\n" 
+				+ "	   } \r\n" 				
+				+ "}"; 
 		
 		private static String programa16 = 
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
-				+ "	   } \r\n" 
+				+ "        Motor.A.rotate(1200, true); \r\n" 
+				+ "	       Motor.B.rotate(1200); \r\n" 
+				+ "	       Motor.B.rotate(700); \r\n" 
+				+ "        Motor.A.rotate(2500, true); \r\n" 
+				+ "	       Motor.B.rotate(2500); \r\n" 
+				+ "	       Motor.A.rotate(550); \r\n" 
+				+ "        Motor.A.rotate(1300, true); \r\n" 
+				+ "	       Motor.B.rotate(1300); \r\n" 
+				+ "	       Motor.B.rotate(550); \r\n" 
+				+ "        Motor.A.rotate(500, true); \r\n" 
+				+ "	       Motor.B.rotate(500); \r\n" 
+				+ "	   } \r\n" 				
 				+ "}"; 
+		
 		
 		private static String programa17 = 
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "        Motor.A.rotate(400, true); \r\n" 
+				+ "	       Motor.B.rotate(400); \r\n" 
 				+ "	   } \r\n"  
 				+ "}"; 
 		
@@ -162,8 +223,9 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "	       Motor.A.rotate(600); \r\n" 
+				+ "        Motor.A.rotate(1000, true); \r\n" 
+				+ "	       Motor.B.rotate(1000); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -171,8 +233,9 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "	       Motor.B.rotate(750); \r\n" 
+				+ "        Motor.A.rotate(3300, true); \r\n" 
+				+ "	       Motor.B.rotate(3300); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -180,8 +243,9 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "	       Motor.A.rotate(500); \r\n" 
+				+ "        Motor.A.rotate(1000, true); \r\n" 
+				+ "	       Motor.B.rotate(1000); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -189,8 +253,11 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "        Motor.A.rotate(400, true); \r\n" 
+				+ "	       Motor.B.rotate(400); \r\n" 
+				+ "	       Motor.A.rotate(600); \r\n" 
+				+ "        Motor.A.rotate(1000, true); \r\n" 
+				+ "	       Motor.B.rotate(1000); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -198,8 +265,12 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "	       Motor.B.rotate(750); \r\n" 
+				+ "        Motor.A.rotate(3300, true); \r\n" 
+				+ "	       Motor.B.rotate(3300); \r\n" 
+				+ "	       Motor.A.rotate(500); \r\n" 
+				+ "        Motor.A.rotate(1000, true); \r\n" 
+				+ "	       Motor.B.rotate(1000); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
 		
@@ -207,11 +278,20 @@ public class LejosConstants {
 				   "import lejos.nxt.Motor; \r\n"                     
 				+ "public class RunTest { \r\n"
 				+ "	   public static void main(String[] args) throws Exception { \r\n"
-				+ "        Motor.A.rotate(1240, true); \r\n" 
-				+ "	       Motor.B.rotate(1240); \r\n" 
+				+ "        Motor.A.rotate(400, true); \r\n" 
+				+ "	       Motor.B.rotate(400); \r\n" 
+				+ "	       Motor.A.rotate(600); \r\n" 
+				+ "        Motor.A.rotate(1000, true); \r\n" 
+				+ "	       Motor.B.rotate(1000); \r\n" 
+				+ "	       Motor.B.rotate(750); \r\n" 
+				+ "        Motor.A.rotate(3300, true); \r\n" 
+				+ "	       Motor.B.rotate(3300); \r\n" 
+				+ "	       Motor.A.rotate(500); \r\n" 
+				+ "        Motor.A.rotate(1000, true); \r\n" 
+				+ "	       Motor.B.rotate(1000); \r\n" 
 				+ "	   } \r\n" 
 				+ "}"; 
-		
+				
 	
 	private static List<String> programas = new ArrayList<String>();
 	
