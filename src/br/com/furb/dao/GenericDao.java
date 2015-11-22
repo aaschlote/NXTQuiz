@@ -36,6 +36,10 @@ public class GenericDao {
 		return desafioNivelPergunta;
 	}
 	
+	public String getShowErrorSpan() {
+		return SystemAction.getInstance().getSessionUser().isShowErrorSpan() ? "block" : "none";
+	}
+	
 	public List<OpcaoPergunta> listaOpcaoPergunta(Long idPergunta){
 		User user = SystemAction.getInstance().getSessionUser();
 		Query query = user.getManager().createQuery("from OpcaoPergunta as o"+
@@ -53,5 +57,12 @@ public class GenericDao {
 		return user.getManager().find(DesafioNivelPergunta.class, idDesafioNivelPergunta);
 	}
 	
-
+	public boolean isGameOver() {
+		return SystemAction.getInstance().getSessionUser().isGameOver();
+	}
+	
+	public String getUserName() {
+		return SystemAction.getInstance().getSessionUser().getUsuario().getNmAluno();
+	}
+	
 }

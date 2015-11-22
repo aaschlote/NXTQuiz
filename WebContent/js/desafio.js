@@ -1,3 +1,10 @@
+window.onload = function() { 
+	document.getElementById('loading').style.display='none';
+	if (document.getElementById('gameover').value == 'true') {
+		document.getElementById('showModal').click();
+	}
+}
+
 $('a.pagina-desafio').on('click', function() {
 	var id = $(this).data('id');
 	
@@ -23,6 +30,9 @@ $('a.opcao-pergunta').on('click', function() {
             alert("error: "+data+" status: "+status+" er:"+er);
         }
     });
+	
+	document.getElementById('loading').style.display='block';
+	document.getElementById('errormsg').style.display='none';
 	
 	return false;
 });

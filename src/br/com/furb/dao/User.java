@@ -13,12 +13,15 @@ public class User {
 	private Usuario usuario;
 	private int nrNivelJogo;
 	private int nrPergunta;
+	private boolean showErrorSpan;
+	private boolean gameOver;
 	
 	public User(){
 		factory = new Persistence().createEntityManagerFactory("connection");
 		manager = factory.createEntityManager();
 		nrNivelJogo = 1;
 		nrPergunta = 1;
+		showErrorSpan = false;
 	}
 
 	public EntityManager getManager() {
@@ -51,6 +54,22 @@ public class User {
 
 	public void setNrPergunta(int nrPergunta) {
 		this.nrPergunta = nrPergunta;
+	}
+
+	public boolean isShowErrorSpan() {
+		return showErrorSpan;
+	}
+
+	public void setShowErrorSpan(boolean showErrorSpan) {
+		this.showErrorSpan = showErrorSpan;
+	}
+
+	public boolean isGameOver() {
+		return gameOver;
+	}
+
+	public void setGameOver(boolean gameOver) {
+		this.gameOver = gameOver;
 	}
 	
 	
