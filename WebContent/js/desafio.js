@@ -47,3 +47,20 @@ $('a.opcao-pergunta').on('click', function() {
 	
 	return false;
 });
+
+
+$('#encerra').on('click', function (e) {
+
+	$.ajax({
+        url: "nxtEncerrarDesafio",
+        type: 'POST',
+        success: function (data) { 
+        	location.href='index.jsp';
+        	return false;
+        },
+        error:function(data,status,er) {
+            alert("error: "+data+" status: "+status+" er:"+er);
+        }
+    });
+
+})

@@ -17,6 +17,7 @@ public class User {
 	private boolean showErrorSpan;
 	private boolean gameOver;
 	private UsuarioJogo usuarioJogo;
+	private int tentativas;
 	
 	public User(){
 		factory = new Persistence().createEntityManagerFactory("connection");
@@ -81,5 +82,14 @@ public class User {
 	public void setUsuarioJogo(UsuarioJogo usuarioJogo) {
 		this.usuarioJogo = usuarioJogo;
 	}
+
+	public int getTentativas() {
+		return tentativas;
+	}
+
+	public void setTentativas(int tentativas) {
+		this.tentativas = tentativas;
+	}
+	
 
 }

@@ -36,6 +36,7 @@ public class AceitarDesafio extends HttpServlet {
 		usuarioJogo.setQtPontuacao(0);
 		user.getManager().persist(usuarioJogo);
 		user.getManager().getTransaction().commit();
+		user.setTentativas(0);
 		
 		user.setUsuarioJogo(usuarioJogo);
 		

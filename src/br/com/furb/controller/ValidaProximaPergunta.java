@@ -30,14 +30,22 @@ public class ValidaProximaPergunta extends HttpServlet {
 
 		if (ieRespostaCerta.equalsIgnoreCase("S")) {
 			
-			//LejosController lejosController = new LejosController();
+			LejosController lejosController = new LejosController();
 
 			GenericDao generic = new GenericDao();
 
 			DesafioNivelPergunta pergunta = generic.searchDesafioNivelPergunta(idPergunta, user);
-			//lejosController.executarComando(pergunta.getId().intValue());
+			lejosController.executarComando(pergunta.getId().intValue());
 			
-			usuarioJogo.setQtPontuacao(usuarioJogo.getQtPontuacao()+pergunta.getQtPontuacao());
+			float pontuacao = pergunta.getQtPontuacao();
+			
+			if	(user.getTentativas() > 1){
+				pontuacao = 0;
+			}else if (user.getTentativas() == 1){
+				pontuacao = Math.round(pontuacao/2) ;
+			}
+			
+			usuarioJogo.setQtPontuacao(usuarioJogo.getQtPontuacao()+ (int) pontuacao);
 			
 			if (pergunta.getDesafioNivel().getNrNivel() == 3) { // Game is over
 				user.setGameOver(true);
@@ -51,7 +59,7 @@ public class ValidaProximaPergunta extends HttpServlet {
 				}
 
 			}
-
+			user.setTentativas(0);
 			user.setShowErrorSpan(false);
 		} else {
 			user.getManager().getTransaction().begin();
@@ -59,6 +67,7 @@ public class ValidaProximaPergunta extends HttpServlet {
 			user.getManager().merge(usuarioJogo);
 			user.getManager().getTransaction().commit();
 			user.setShowErrorSpan(true);
+			user.setTentativas(user.getTentativas()+1);
 		}
 
 	}

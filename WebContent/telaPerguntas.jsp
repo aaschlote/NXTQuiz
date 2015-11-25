@@ -33,7 +33,7 @@
 		
 			<%
 				DesafioNivelPergunta desafioNivelPergunta = generic.getPerguntaJogo(Long.parseLong(idDesafio));
-				out.print("<div  class='page-header'><h3>Desafio " + desafioNivelPergunta.getDesafioNivel().getNrNivel() + " - " + desafioNivelPergunta.getDsPergunta() + "</h3></div>");
+				out.print("<div  class='page-header'><h3>Desafio " + desafioNivelPergunta.getDesafioNivel().getDesafio().getId() + " - Nível " + desafioNivelPergunta.getDesafioNivel().getNrNivel() + " - " + desafioNivelPergunta.getDsPergunta() + "</h3></div>");
 			
 				out.print("<ul class='list' id='lista-desafios'>");
 				
@@ -74,7 +74,7 @@
 	      	<p style="font-weight: bold">Desafio: <%out.print(desafioNivelPergunta.getDesafioNivel().getDesafio().getNmDesafio()); %></p>
 	        <p style="font-weight: bold">Quantidade de erros: <%out.print(user.getUsuarioJogo().getQtErros()); %></p>
 	        <p style="font-weight: bold">Pontuação: <%out.print(user.getUsuarioJogo().getQtPontuacao()); %></p>
-	        <button type="button" class="btn btn-info btn-lg">Encerrar sessão</button>
+	        <button id="encerra" type="button" class="btn btn-info btn-lg">Encerrar sessão</button>
 	      </div>
 	    </div>
 	
